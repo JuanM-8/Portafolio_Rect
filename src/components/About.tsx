@@ -20,16 +20,16 @@ function About() {
       <div className="imagen">
         <img
           className="foto"
-          src="src/media/Otros/Foto.jpg"
+          src="media/Otros/Foto.jpg"
           width="250px"
           alt=""
         />
         <div className="redes">
           <a target="_blank" href="https://www.instagram.com/juanmarin_8/">
-            <img src="public/media/Instagram.webp" alt="" />
+            <img src="media/Icons/Instagram.webp" alt="" />
           </a>
           <a href="https://github.com/JuanM-8" target="_blank">
-            <img src="src/media/Icons/github.gif" alt="" />
+            <img src="media/Icons/github.gif" alt="" />
           </a>
         </div>
       </div>

@@ -2,7 +2,7 @@ import "../Styles/Header.css";
 function Header() {
   return (
     <header>
-      <img src="src/media/Icons/JM.png" width="50px" alt="" />
+      <img src="media/Icons/JM.png" width="50px" alt="" />
       <button id="abrir" className="abrir-menu">||
         <i className="bi bi-list" />
       </button>

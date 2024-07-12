@@ -7,39 +7,39 @@ function Certificados() {
       <div className="carousel">
         <div className="imgC">
           <Contenedor
-            img="src/media/certificados/Cingles.webp"
+            img="media/certificados/Cingles.webp"
             titulo="2019 - SENA"
           />
           <Contenedor
-            img="src/media/certificados/Cc++.webp"
+            img="media/certificados/Cc++.webp"
             titulo="2021 - SENA"
           />
           <Contenedor
-            img="src/media/certificados/Csistemas.webp"
+            img="media/certificados/Csistemas.webp"
             titulo="2022 - SENA"
           />
           <Contenedor
-            img="src/media/certificados/CFreecodecamp.png"
+            img="media/certificados/CFreecodecamp.png"
             titulo="2022 - FreeCodeCamp"
           />
           <Contenedor
-            img="src/media/certificados/CIntroduccionAlaProgramacion.webp"
+            img="media/certificados/CIntroduccionAlaProgramacion.webp"
             titulo="2023 - CUN"
           />
           <Contenedor
-            img="src/media/certificados/Cfpi.webp"
+            img="media/certificados/Cfpi.webp"
             titulo="2024 - SENA"
           />
           <Contenedor
-            img="src/media/certificados/CBigDataT.png"
+            img="media/certificados/CBigDataT.png"
             titulo="2024 - Capacitate Para El Empleo"
           />
           <Contenedor
-            img="src/media/certificados/CMTJS.webp"
+            img="media/certificados/CMTJS.webp"
             titulo="2024 - Generacion TIC"
           />
           <Contenedor
-            img="src/media/certificados/CMTIA.webp"
+            img="media/certificados/CMTIA.webp"
             titulo="2024 - Generacion TIC"
           />
          
