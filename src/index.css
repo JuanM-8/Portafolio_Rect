@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #16171a transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inconsolata";
+  background: #20222c;
+  background-image: url(./media/Otros/bk.png);
+}

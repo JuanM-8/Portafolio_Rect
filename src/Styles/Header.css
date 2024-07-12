@@ -1,0 +1,31 @@
+header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 3.4em;
+  margin: 0;
+  padding: 0 15%;
+  backdrop-filter: blur(10px);
+  z-index: 3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.272);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s linear;
+  font-size: 1.2rem;
+}
+header nav a:hover {
+  color: lightgreen;
+  border-bottom: 2px solid lightgreen;
+}

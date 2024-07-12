@@ -1,0 +1,5 @@
+footer {
+    display: flex;
+    color: rgba(255, 255, 255, 0.451);
+    place-content: center;
+  }

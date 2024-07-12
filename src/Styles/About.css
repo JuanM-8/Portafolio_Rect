@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  padding: 10% 15%;
+  position: relative;
+}
+.about .descripcion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  text-align: start;
+  justify-content: space-evenly;
+}
+.about .descripcion h1 {
+  font-size: clamp(2rem, -2.75rem + 12vw, 4rem);
+  color: #e2e3a4;
+}
+.about .descripcion h3 {
+  color: rgba(255, 255, 255, 0.691);
+  font-size: clamp(1rem, -2.75rem + 12vw, 3.5rem);
+}
+.about .descripcion p {
+  color: white;
+  font-size: clamp(0.75rem, 0.895vw + 0.176rem, 1.25rem);
+}
+.about .imagen {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about .imagen .foto {
+  border-radius: 50%;
+  width: 50%;
+  transition: 0.5s linear;
+}
+.about .imagen .foto:hover {
+  transform: skewY(8deg);
+}
+
+.redes img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  transition: 0.2s linear;
+}
+.redes img:hover {
+  transform: scale(1.2);
+}
