@@ -26,7 +26,7 @@ function About() {
         />
         <div className="redes">
           <a target="_blank" href="https://www.instagram.com/juanmarin_8/">
-            <img src="src/media/Icons/Instagram.webp" alt="" />
+            <img src="public/media/Instagram.webp" alt="" />
           </a>
           <a href="https://github.com/JuanM-8" target="_blank">
             <img src="src/media/Icons/github.gif" alt="" />
