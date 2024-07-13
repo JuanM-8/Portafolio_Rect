@@ -53,7 +53,7 @@ function Contenedor(props: any) {
   return (
     <div className="containerI">
       <span className="certificados_img">
-        <img loading="lazy" src={props.img} alt="" />
+        <img loading="lazy" src={props.img} alt="imagen de certificado" />
       </span>
       <div className="overlay">
         <h2>{props.titulo}</h2>

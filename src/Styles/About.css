@@ -16,7 +16,7 @@
   font-size: clamp(2rem, -2.75rem + 12vw, 4rem);
   color: #e2e3a4;
 }
-.about .descripcion h3 {
+.about .descripcion h2 {
   color: rgba(255, 255, 255, 0.691);
   font-size: clamp(1rem, -2.75rem + 12vw, 3.5rem);
 }

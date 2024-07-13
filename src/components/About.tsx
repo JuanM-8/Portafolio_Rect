@@ -6,7 +6,7 @@ function About() {
       <div className="descripcion">
         <div>
           <h1>JUAN DAVID MARIN ARISMENDEZ</h1>
-          <h3>Software Developer</h3>
+          <h2>Software Developer</h2>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -22,14 +22,14 @@ function About() {
           className="foto"
           src="media/Otros/Foto.jpg"
           width="250px"
-          alt=""
+          alt="imagen de perfil"
         />
         <div className="redes">
           <a target="_blank" href="https://www.instagram.com/juanmarin_8/">
-            <img src="media/Icons/Instagram.webp" alt="" />
+            <img src="media/Icons/Instagram.webp" alt="logo instagram" />
           </a>
           <a href="https://github.com/JuanM-8" target="_blank">
-            <img src="media/Icons/github.gif" alt="" />
+            <img src="media/Icons/github.gif" alt="logo github" />
           </a>
         </div>
       </div>
