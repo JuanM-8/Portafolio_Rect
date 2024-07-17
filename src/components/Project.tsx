@@ -48,9 +48,9 @@ function Projects(props: any) {
         <img src={props.img} alt="proyectos" />
       </a>
       <div className="lg" id="lg">
-        <img src={props.logo} alt="icono" />
-        <img src={props.logo1} alt="icono" />
-        <img src={props.logo2} alt="icono" />
+        <img src={props.logo}  />
+        <img src={props.logo1}  />
+        <img src={props.logo2}  />
       </div>
     </div>
   );
