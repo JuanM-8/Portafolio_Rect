@@ -1,5 +1,10 @@
 import "../Styles/Certificados.css";
+import { useState } from "react";
 function Certificados() {
+  const [show, setShow] = useState(false);
+  const toggleShow = () => {
+    setShow(!show);
+  }
   return (
     <section id="certificados" data-aos="fade-up" className="certificados">
       <span className="glow"></span>
@@ -22,7 +27,9 @@ function Certificados() {
             img="media/certificados/CFreecodecamp.png"
             titulo="2022 - FreeCodeCamp"
           />
-          <Contenedor
+          {show && (
+            <>
+              <Contenedor
             img="media/certificados/CIntroduccionAlaProgramacion.webp"
             titulo="2023 - CUN"
           />
@@ -41,9 +48,17 @@ function Certificados() {
           <Contenedor
             img="media/certificados/CMTIA.webp"
             titulo="2024 - Generacion TIC"
-          />
+          /> 
+          <Contenedor
+            img="media/certificados/CssCertificado.jpeg"
+            titulo="2024 - SoloLearn"
+          /> 
+            </>
+          )}
+          
          
         </div>
+        <button onClick={toggleShow} >{show ? "Ver Menos" : "Ver Más"}</button>
       </div>
     </section>
   );

@@ -14,15 +14,6 @@
     z-index: -1;
     
   }
-  
-
-  
-  
-  
-  
-  
-  
-  
   .skills {
     position: relative;
     display: flex;
@@ -38,9 +29,6 @@
     font-size: 3rem;
     text-align: center;
   }
-  
-  
-  
   .containerS {
     padding: 3rem 0;
     display: flex;

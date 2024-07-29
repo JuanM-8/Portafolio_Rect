@@ -1,7 +1,26 @@
+import  { useState, useEffect } from "react";
 import "../Styles/Separador.css";
+
 function Separador() {
+  const [strokeColor, setStrokeColor] = useState('#ffffff');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setStrokeColor('#ffffff');
+      } else {
+        setStrokeColor('transparent');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    
     <section id="separador">
       <svg
         id="ssvg"
@@ -11,7 +30,7 @@ function Separador() {
         height={28}
         viewBox="0 0 24 24"
         strokeWidth="2.5"
-        stroke="#ffffff"
+        stroke={strokeColor}
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -9,12 +9,12 @@ function About() {
           <h2>Software Developer</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          error perspiciatis eius. Sit quibusdam at perferendis quo ratione
-          atque consectetur eos magnam quam repellendus, aspernatur neque ullam,
-          pariatur officiis optio, quasi fugit minima assumenda officia dolor
-          laboriosam! Nobis reprehenderit labore, numquam obcaecati similique
-          quam voluptatem sint a, cumque consequatur soluta.
+          Soy un programador web en desarrollo apasionado por el diseño y la
+          implementación de interfaces de usuario. Me gusta trabajar en el
+          front-end, donde puedo combinar creatividad y tecnología para crear
+          experiencias de usuario atractivas y funcionales. Mi objetivo es
+          seguir aprendiendo y mejorando mis habilidades en HTML, CSS,
+          JavaScript y frameworks modernos como React. 😀
         </p>
       </div>
       <div className="imagen">
