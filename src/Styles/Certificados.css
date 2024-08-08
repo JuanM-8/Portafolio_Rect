@@ -101,3 +101,16 @@ button {
     background-color: #e2e3a493;
   }
 }
+select{
+  margin-top: 10px;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+
+  > option{
+    background-color: gray;
+    color: #fff;
+  } 
+
+ 
+}
