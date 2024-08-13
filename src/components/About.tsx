@@ -14,7 +14,7 @@ function About() {
           front-end, donde puedo combinar creatividad y tecnología para crear
           experiencias de usuario atractivas y funcionales. Mi objetivo es
           seguir aprendiendo y mejorando mis habilidades en HTML, CSS,
-          JavaScript y frameworks modernos como React. 😀
+          JavaScript y frameworks modernos como React. 😀💻
         </p>
       </div>
       <div className="imagen">
