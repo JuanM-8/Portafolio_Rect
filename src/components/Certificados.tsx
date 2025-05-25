@@ -12,7 +12,9 @@ const certificadosData = [
   { img: "media/certificados/CMTJS.webp", titulo: "2024 - Generacion TIC", year: 2024 },
   { img: "media/certificados/CMTIA.webp", titulo: "2024 - Generacion TIC", year: 2024 },
   { img: "media/certificados/CssCertificado.jpeg", titulo: "2024 - SoloLearn", year: 2024 },
-  { img: "media/certificados/CGenerativeAI.webp", titulo: "2025 - Coursera", year: 2025 }
+  { img: "media/certificados/CGenerativeAI.webp", titulo: "2025 - Coursera", year: 2025 },
+  { img: "media/certificados/CLinkedin.jpg", titulo: "2025 - LinkedIn", year: 2025 }
+
 ];
 
 function Certificados() {
