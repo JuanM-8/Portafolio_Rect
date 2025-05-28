@@ -26,7 +26,6 @@
 }
 .about .imagen {
   width: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,10 @@
 }
 .about .imagen .foto {
   border-radius: 50%;
-  width: 50%;
+  
+  width: 350px;
+  height: 350px;
+ 
   transition: 0.5s linear;
 }
 .about .imagen .foto:hover {

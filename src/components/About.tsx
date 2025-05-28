@@ -1,4 +1,5 @@
 import "../Styles/About.css";
+import Typewriter from "typewriter-effect";
 function About() {
   return (
     <section className="about" id="about">
@@ -6,7 +7,11 @@ function About() {
       <div className="descripcion">
         <div>
           <h1>JUAN DAVID MARIN ARISMENDEZ</h1>
-          <h2>Software Developer</h2>
+          <h2><Typewriter options={{
+            strings:["Software developer"],
+            autoStart: true,
+            loop: true
+          }}/></h2>
         </div>
         <p>
           Soy un programador web en desarrollo apasionado por el diseño y la
@@ -14,14 +19,13 @@ function About() {
           front-end, donde puedo combinar creatividad y tecnología para crear
           experiencias de usuario atractivas y funcionales. Mi objetivo es
           seguir aprendiendo y mejorando mis habilidades en HTML, CSS,
-          JavaScript y frameworks modernos como React. 😀💻
+          JavaScript y frameworks modernos como React. 👨‍💻
         </p>
       </div>
       <div className="imagen">
         <img
           className="foto"
-          src="media/Otros/Foto.jpg"
-          width="250px"
+          src="public/media/Otros/ImageP.jpg"
           alt="imagen de perfil"
         />
         <div className="redes">

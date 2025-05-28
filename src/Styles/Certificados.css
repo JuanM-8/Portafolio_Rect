@@ -4,13 +4,12 @@
   flex-direction: column;
   padding: 2.5% 15%;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 .certificados h1 {
-  color: rgb(224, 224, 224);
-  font-size: 3rem;
-  text-align: center;
+  color: #e2e3a4;
+  font-size: 4rem;
+  text-align: start;
 }
 
 .imgC {
@@ -29,6 +28,7 @@
     backdrop-filter: blur(10px);
   }
   .carousel {
+    text-align: center;
     width: 100%;
   }
   .containerI .certificados_img {

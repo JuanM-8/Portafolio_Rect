@@ -1,26 +1,28 @@
 header {
-  position: sticky;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  position: sticky;
   top: 0;
-  height: 3.4em;
-  margin: 0;
-  padding: 0 15%;
-  backdrop-filter: blur(10px);
-  z-index: 3;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.272);
+  z-index: 999;
+  
+  
 }
 header nav {
+  backdrop-filter: blur(50px);
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(127, 127, 127, 0.228);
+  
 }
 header nav a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  margin-right: 2rem;
   border-bottom: 2px solid transparent;
   transition: 0.5s linear;
   font-size: 1.2rem;
@@ -28,4 +30,10 @@ header nav a {
 header nav a:hover {
   color: lightgreen;
   border-bottom: 2px solid lightgreen;
+}
+
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
 }
