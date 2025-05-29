@@ -38,10 +38,9 @@ function Certificados() {
   
 
   return (
-    <section id="certificados" data-aos="fade-up" className="certificados">
+    <section id="certificados"  className="certificados">
       <span className="glow"></span>
       <h1>Certificados</h1>
-
       <div className="carousel">
         <div>
           <select value={selectedYear} onChange={handleYearChange}>

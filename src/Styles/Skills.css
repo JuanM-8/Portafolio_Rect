@@ -9,7 +9,8 @@
 
   > h1 {
     color: #e2e3a4;
-  font-size: 4rem;
+    font-size: clamp(2rem, -2.75rem + 12vw, 4rem);
+
   text-align: start;
   }
 

@@ -2,9 +2,6 @@ import "../Styles/Header.css";
 function Header() {
   return (
     <header>
-      <button id="abrir" className="abrir-menu">||
-        <i className="bi bi-list" />
-      </button>
       <nav className="nav" id="nav">
         <button className="cerrar-menu" id="cerrar">
           <i className="bi bi-x" />

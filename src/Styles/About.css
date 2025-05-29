@@ -33,9 +33,9 @@
 }
 .about .imagen .foto {
   border-radius: 50%;
-  
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
  
   transition: 0.5s linear;
 }
