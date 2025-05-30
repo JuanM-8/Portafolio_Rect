@@ -2,19 +2,66 @@ import "../Styles/Certificados.css";
 import { useState } from "react";
 
 const certificadosData = [
-  { img: "media/certificados/Cingles.webp", titulo: "2019 - SENA", year: 2019, language:"ingles"},
-  { img: "media/certificados/Cc++.webp", titulo: "2021 - SENA", year: 2021 },
-  { img: "media/certificados/Csistemas.webp", titulo: "2022 - SENA", year: 2022 },
-  { img: "media/certificados/CFreecodecamp.png", titulo: "2022 - FreeCodeCamp", year: 2022 },
-  { img: "media/certificados/CIntroduccionAlaProgramacion.webp", titulo: "2023 - CUN", year: 2023 },
-  { img: "media/certificados/Cfpi.webp", titulo: "2024 - SENA", year: 2024 },
-  { img: "media/certificados/CBigDataT.png", titulo: "2024 - Capacitate Para El Empleo", year: 2024 },
-  { img: "media/certificados/CMTJS.webp", titulo: "2024 - Generacion TIC", year: 2024 },
-  { img: "media/certificados/CMTIA.webp", titulo: "2024 - Generacion TIC", year: 2024 },
-  { img: "media/certificados/CssCertificado.jpeg", titulo: "2024 - SoloLearn", year: 2024 },
-  { img: "media/certificados/CGenerativeAI.webp", titulo: "2025 - Coursera", year: 2025 },
-  { img: "media/certificados/CLinkedin.jpg", titulo: "2025 - LinkedIn", year: 2025 }
-
+  {
+    img: "media/certificados/Cingles.webp",
+    titulo: "ENGLISH DOT WORKS 2 · SENA ",
+    year: 2019,
+  },
+  {
+    img: "media/certificados/Cc++.webp",
+    titulo: "ESTRUCTURASD DEL LENGUAJE DE PROGRAMACION C++ · SENA",
+    year: 2021,
+  },
+  {
+    img: "media/certificados/Csistemas.webp",
+    titulo: "TÉCNICO EN SISTEMAS · SENA",
+    year: 2022,
+  },
+  {
+    img: "media/certificados/CFreecodecamp.png",
+    titulo: "RESPONSIVE WEB DESIGN · FreeCodeCamp",
+    year: 2022,
+  },
+  {
+    img: "media/certificados/CIntroduccionAlaProgramacion.webp",
+    titulo: "INTRODUCCION A LA LÓGICA DE PROGRAMACIÓN · CUN",
+    year: 2023,
+  },
+  {
+    img: "media/certificados/Cfpi.webp",
+    titulo: "CURSO INTRODUCTORIO A LA FORMACION INTEGRAL · SENA",
+    year: 2024,
+  },
+  {
+    img: "media/certificados/CBigDataT.png",
+    titulo: "VISUALIZADOR DE BIG DATA · Capacitate Para El Empleo",
+    year: 2024,
+  },
+  {
+    img: "media/certificados/CMTJS.webp",
+    titulo: "LENGUAGE DE PROGRAMACION JAVASCRIPT · Generacion TIC",
+    year: 2024,
+  },
+  {
+    img: "media/certificados/CMTIA.webp",
+    titulo: "INTELIGENCIA ARTIFICIAL · Generacion TIC",
+    year: 2024,
+  },
+  {
+    img: "media/certificados/CssCertificado.jpeg",
+    titulo: "INTRODUCTION TO CSS · SoloLearn",
+    year: 2024,
+  },
+  {
+    img: "media/certificados/CGenerativeAI.webp",
+    titulo: "GENERATIVE AI: PROMPT ENGINEERING BASICS · Coursera",
+    year: 2025,
+  },
+  {
+    img: "media/certificados/CLinkedin.jpg",
+    titulo: "FUNDAMENTOS ESENCIALES DE LA PROGRAMACION · LinkedIn",
+    year: 2025,
+  },
 ];
 
 function Certificados() {
@@ -25,20 +72,19 @@ function Certificados() {
     setShow(!show);
   };
 
-  const handleYearChange = (e:any) => {
+  const handleYearChange = (e: any) => {
     setSelectedYear(e.target.value);
     console.log(e.target.value);
   };
 
   const filteredCertificados = certificadosData.filter((certificado) => {
-    return selectedYear === "Todos" ||selectedYear  === certificado.year.toString();
-    
-   
+    return (
+      selectedYear === "Todos" || selectedYear === certificado.year.toString()
+    );
   });
-  
 
   return (
-    <section id="certificados"  className="certificados">
+    <section id="certificados" className="certificados">
       <span className="glow"></span>
       <h1>Certificados</h1>
       <div className="carousel">
@@ -54,12 +100,13 @@ function Certificados() {
         </div>
         <div className="imgC">
           {filteredCertificados
-            .slice(0, show ? filteredCertificados.length : 4)
+            .slice(0, show ? filteredCertificados.length : 6)
             .map((certificado, index) => (
               <Contenedor
                 key={index}
                 img={certificado.img}
                 titulo={certificado.titulo}
+                year={certificado.year}
               />
             ))}
         </div>
@@ -71,15 +118,12 @@ function Certificados() {
   );
 }
 
-function Contenedor(props:any) {
+function Contenedor(props: any) {
   return (
     <div className="containerI">
-      <span className="certificados_img">
-        <img loading="lazy" src={props.img} alt="año de certificado" />
-      </span>
-      <div className="overlay">
-        <h2>{props.titulo}</h2>
-      </div>
+      <img loading="lazy" src={props.img} alt="año de certificado" />
+      <h3> {props.titulo}</h3>
+      <p>{props.year}</p>
     </div>
   );
 }
