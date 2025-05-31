@@ -36,7 +36,7 @@
 .containerS span img {
   width: 80%;
 }
-.containerS span:hover {
+.containerS span img:hover {
   filter: drop-shadow(0px 0px 4px #ffffff);
 }
 

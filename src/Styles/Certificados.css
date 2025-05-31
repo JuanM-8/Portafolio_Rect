@@ -22,7 +22,6 @@ h1 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3,1fr);
-  width: max-content;
   margin: 0 auto;
 }
 .containerI {
@@ -42,8 +41,8 @@ h1 {
 
 .containerI img {
   width: 100%;
-  height: 260px;              /* ← Más alto para diplomas legibles */
-  object-fit: contain;        /* Cambiado a 'contain' para que no recorte el texto */
+  height: 260px;             
+  object-fit: contain;       
   background: #fff;
   border-radius: 12px;
   cursor: zoom-in;
@@ -101,6 +100,7 @@ select option {
   }
   .imgC{
     display: flex;
+    width: max-content;
   }
   .containerI{
     width: 350px !important;
