@@ -3,9 +3,6 @@ function Header() {
   return (
     <header>
       <nav className="nav" id="nav">
-        <button className="cerrar-menu" id="cerrar">
-          <i className="bi bi-x" />
-        </button>
         <div className="nav-list">
           <a id="aboutA" href="#about">
             Sobre mi

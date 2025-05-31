@@ -42,10 +42,23 @@ header nav a:hover {
     top: unset;
     bottom: -1px;
     width: 100%;
+
+    .nav-list{
+      width: 100%;
+      
+      justify-content: center;
+    }
+
+    nav {
+      border-radius: 0;
+      width: 100%;
+      
+
+      a{
+        font-size: 1rem;
+      }
+    }
     
   }
-  header nav {
-    border-radius: 0;
-    width: 100%;
-  }
+
 }

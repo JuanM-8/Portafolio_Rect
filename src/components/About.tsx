@@ -7,11 +7,15 @@ function About() {
       <div className="descripcion">
         <div>
           <h1>JUAN DAVID MARIN ARISMENDEZ</h1>
-          <h2><Typewriter options={{
-            strings:["Software developer"],
-            autoStart: true,
-            loop: true
-          }}/></h2>
+          <h2>
+            <Typewriter
+              options={{
+                strings: ["Software developer"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h2>
         </div>
         <p>
           Soy un programador web en desarrollo apasionado por el diseño y la
@@ -34,6 +38,9 @@ function About() {
           </a>
           <a href="https://github.com/JuanM-8" target="_blank">
             <img src="media/Icons/github.gif" alt="logo github" />
+          </a>
+          <a href="https://github.com/JuanM-8" target="_blank">
+            <img src="media/Icons/linkedinlogo.png" alt="logo github" />
           </a>
         </div>
       </div>
