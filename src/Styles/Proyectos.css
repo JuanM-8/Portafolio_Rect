@@ -71,3 +71,10 @@
   transform: scale(1.1);
   filter: drop-shadow(0px 0px 5px #ffffff5c);
 }
+
+@media screen and (max-width: 768px) {
+  .container_p {
+    display: flex !important;
+    flex-direction: column;
+  }
+}

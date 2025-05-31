@@ -36,11 +36,11 @@
   width: 100%;
   max-width: 350px;
   height: auto;
- 
+
   transition: 0.5s linear;
 }
 .about .imagen .foto:hover {
-  transform: skewY(8deg);
+  transform: scale(1.02);
 }
 
 .redes img {
@@ -52,4 +52,26 @@
 }
 .redes img:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .descripcion h1 {
+    text-align: start;
+  }
+  .about .descripcion {
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+    height: 15rem;
+    padding: 0;
+  }
+  .imagen{
+    width: 100% !important;
+  }
+ .foto{
+  width: 65% !important;
+ }
 }

@@ -9,7 +9,7 @@ const certificadosData = [
   },
   {
     img: "media/certificados/Cc++.webp",
-    titulo: "ESTRUCTURASD DEL LENGUAJE DE PROGRAMACION C++ · SENA",
+    titulo: "ESTRUCTURAS DEL LENGUAJE DE PROGRAMACION C++ · SENA",
     year: 2021,
   },
   {
