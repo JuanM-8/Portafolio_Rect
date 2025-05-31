@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .containerS{
-    padding: 0 0 3rem 0 !important;
-    
+    padding: unset !important;
   }
+  
 }

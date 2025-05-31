@@ -110,7 +110,7 @@ function Certificados() {
               />
             ))}
         </div>
-        {filteredCertificados.length > 4 && (
+        {filteredCertificados.length >= 6  && (
           <button onClick={toggleShow}>{show ? "Ver Menos" : "Ver Más"}</button>
         )}
       </div>

@@ -3,3 +3,9 @@ footer {
     color: rgba(255, 255, 255, 0.451);
     place-content: center;
   }
+
+  @media screen and (max-width: 768px) {
+    footer {
+     padding-bottom: 80px;
+    }
+  }

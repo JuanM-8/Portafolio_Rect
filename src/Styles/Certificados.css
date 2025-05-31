@@ -96,6 +96,9 @@ select option {
 }
 
 @media screen and (max-width: 768px) {
+  .carousel{
+    overflow-x: scroll;
+  }
   .imgC{
     display: flex;
     overflow-x: scroll;
@@ -106,5 +109,16 @@ select option {
   .containerI{
     width: 300px !important;
     height: 380px;
+  }
+  select{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transform: translate(-50%);
+  }
+  .carousel button{
+    position: sticky;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
