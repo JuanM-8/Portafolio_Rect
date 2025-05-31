@@ -100,7 +100,7 @@ select option {
     display: flex;
     overflow-x: scroll;
     width: max-content;
-    max-width: unset;
+    
     
   }
   .containerI{
