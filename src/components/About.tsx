@@ -1,6 +1,10 @@
 import "../Styles/About.css";
 import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
+
 function About() {
+  const { t } = useTranslation();
+
   return (
     <section className="about" id="about">
       <span className="glow" />
@@ -17,14 +21,7 @@ function About() {
             />
           </h2>
         </div>
-        <p>
-          Soy un programador web en desarrollo apasionado por el diseño y la
-          implementación de interfaces de usuario. Me gusta trabajar en el
-          front-end, donde puedo combinar creatividad y tecnología para crear
-          experiencias de usuario atractivas y funcionales. Mi objetivo es
-          seguir aprendiendo y mejorando mis habilidades en HTML, CSS,
-          JavaScript y frameworks modernos como React. 👨‍💻
-        </p>
+        <p>{t("aboutP")}</p>
       </div>
       <div className="imagen">
         <img

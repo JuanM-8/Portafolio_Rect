@@ -1,8 +1,11 @@
 import "../Styles/Skills.css";
+import { useTranslation } from "react-i18next";
+
 function Skills() {
+  const { t } = useTranslation();
   return (
     <section id="skills" className="skills">
-      <h1>Skills</h1>
+      <h1>{t("skills")}</h1>
       <div className="containerS">
         <span>
           <img loading="lazy" src="media/Icons/html.png" alt="Icono de HTML" />

@@ -1,5 +1,6 @@
 import "../Styles/Certificados.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const certificadosData = [
   {
@@ -65,6 +66,7 @@ const certificadosData = [
 ];
 
 function Certificados() {
+  const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const [selectedYear, setSelectedYear] = useState("Todos");
 
@@ -86,11 +88,11 @@ function Certificados() {
   return (
     <section id="certificados" className="certificados">
       <span className="glow"></span>
-      <h1>Certificados</h1>
+      <h1>{t("certificates")}</h1>
       <div className="carousel">
         <div>
           <select value={selectedYear} onChange={handleYearChange}>
-            <option value="Todos">Todos</option>
+            <option value="Todos">{t("all")}</option>
             <option value="2019">2019</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
@@ -112,7 +114,7 @@ function Certificados() {
             ))}
         </div>
         {filteredCertificados.length >= 6 && (
-          <button onClick={toggleShow}>{show ? "Ver Menos" : "Ver Más"}</button>
+          <button onClick={toggleShow}>{show ? t("seeLess") : t("seeMore")}</button>
         )}
       </div>
     </section>

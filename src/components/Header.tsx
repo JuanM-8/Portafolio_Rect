@@ -1,17 +1,21 @@
 import "../Styles/Header.css";
+import { useTranslation } from "react-i18next";
 function Header() {
+  const { t } = useTranslation();
+
   return (
     <header>
+      
       <nav className="nav" id="nav">
         <div className="nav-list">
           <a id="aboutA" href="#about">
-            Sobre mi
+            {t("about")}
           </a>
           <a id="aboutA" href="#proyectos">
-            Proyectos
+            {t("projects")}
           </a>
           <a id="aboutA" href="#certificados">
-            Certificados
+            {t("certificates")}
           </a>
         </div>
       </nav>

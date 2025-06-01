@@ -1,8 +1,11 @@
 import "../Styles/Proyectos.css";
+import { useTranslation } from "react-i18next";
+
 function Project() {
+  const { t } = useTranslation();
   return (
     <section id="proyectos"  className="proyectos">
-      <h1>Proyectos</h1>
+      <h1>{t("projects")}</h1>
 
       <div className="container_p">
         <Projects
