@@ -1,18 +1,15 @@
 import "../Styles/Proyectos.css";
 function Project() {
   return (
-    <section id="proyectos" data-aos="fade-up" className="proyectos">
+    <section id="proyectos"  className="proyectos">
       <h1>Proyectos</h1>
-      
-      <div className="container_p">
-        
 
+      <div className="container_p">
         <Projects
           url="https://harrypotter-jm.netlify.app/"
           img="media/Otros/PaginaHP.png"
           logo="media/Icons/html.png"
-          logo1=""
-          logo2="media/Icons/css.png"
+          logo1="media/Icons/css.png"
         />
         <Projects
           url="https://calculadorajdm.netlify.app/"
@@ -29,9 +26,9 @@ function Project() {
         />
         <Projects
           img="media/Otros/CrudDjango.png"
-          logo=""
-          logo2="media/Icons/django-icon-1606x2048-lwmw1z73.png"
-          logo1=""
+
+          logo="media/Icons/django-icon-1606x2048-lwmw1z73.png"
+          
         />
       </div>
     </section>
@@ -48,7 +45,6 @@ function Projects(props: any) {
             viewBox="0 0 512 496"
             width="2em"
             height="2em"
-  
           >
             <path
               fill="gray"
@@ -61,9 +57,9 @@ function Projects(props: any) {
         <img src={props.img} alt="proyectos" />
       </a>
       <div className="lg" id="lg">
-        <img src={props.logo} />
-        <img src={props.logo1} />
-        <img src={props.logo2} />
+        {props.logo && <img src={props.logo} alt="logo" />}
+        {props.logo1 && <img src={props.logo1} alt="logo1" />}
+        {props.logo2 && <img src={props.logo2} alt="logo2" />}
       </div>
     </div>
   );
