@@ -5,15 +5,14 @@
   padding: 2.5% 15%;
   justify-content: center;
   width: 100%;
-  padding: 10% 15%;
+  padding: 4% 15%;
 
   > h1 {
     color: #e2e3a4;
     font-size: clamp(2rem, -2.75rem + 12vw, 4rem);
 
-  text-align: start;
+    text-align: start;
   }
-
 }
 
 .containerS {
@@ -41,9 +40,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .containerS{
+  .containerS {
     padding: unset !important;
   }
-  
-  
 }

@@ -39,7 +39,10 @@ function About() {
           <a href="https://github.com/JuanM-8" target="_blank">
             <img src="media/Icons/github.gif" alt="logo github" />
           </a>
-          <a href="https://github.com/JuanM-8" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/juan-marin-2809b8365/"
+            target="_blank"
+          >
             <img src="media/Icons/linkedinlogo.png" alt="logo github" />
           </a>
         </div>
