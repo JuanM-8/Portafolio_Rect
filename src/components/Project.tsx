@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 function Project() {
   const { t } = useTranslation();
   return (
-    <section id="proyectos"  className="proyectos">
+    <section id="proyectos" className="proyectos">
       <h1>{t("projects")}</h1>
 
       <div className="container_p">
@@ -28,10 +28,13 @@ function Project() {
           logo2="media/Icons/Tailwind.png"
         />
         <Projects
+          url="https://juan08.itch.io/jumpmer"
+          img="media/Otros/JumpMer.png "
+          logo="media/Icons/Unity-logo.png"
+        />
+        <Projects
           img="media/Otros/CrudDjango.png"
-
           logo="media/Icons/django-icon-1606x2048-lwmw1z73.png"
-          
         />
       </div>
     </section>
