@@ -77,10 +77,7 @@ h1 {
   color: black;
 }
 
-.carousel button:hover {
-  transform: scale(1.1);
-  background-color: #e2e3a493;
-}
+
 
 select {
   margin-top: 10px;
@@ -120,4 +117,5 @@ select option {
     left: 50%;
     transform: translate(-50%);
   }
+  
 }

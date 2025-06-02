@@ -1,5 +1,5 @@
 .buttonLanguage{
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 20px;
     z-index:999;
