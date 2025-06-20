@@ -22,10 +22,11 @@ function Project() {
           logo2="media/Icons/js.png"
         />
         <Projects
-          img="media/Otros/TaskList.png"
+          url="https://todolistjdm.netlify.app/"
+          img="media/Otros/TodoList.png"
           logo="media/Icons/html.png"
           logo1="media/Icons/css.png"
-          logo2="media/Icons/Tailwind.png"
+          logo2="media/Icons/js.png"
         />
         <Projects
           url="https://juan08.itch.io/jumpmer"
