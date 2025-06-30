@@ -8,9 +8,11 @@
 }
 
 h1 {
+  
   color: #e2e3a4;
   font-size: clamp(2rem, -2.75rem + 12vw, 4rem);
   text-align: start;
+
 }
 
 .carousel {
@@ -117,5 +119,28 @@ select option {
     left: 50%;
     transform: translate(-50%);
   }
+
   
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.778);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.modal-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  cursor: auto;
+  background: white;
 }

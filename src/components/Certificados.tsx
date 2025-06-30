@@ -63,12 +63,25 @@ const certificadosData = [
     titulo: "FUNDAMENTOS ESENCIALES DE LA PROGRAMACION · LinkedIn",
     year: 2025,
   },
+  {
+    img: "media/certificados/IntroductionHTML.jpeg",
+    titulo: "INTRODUCTION TO HTML · SoloLearn",
+    year: 2025,
+  },
+  {
+    img: "media/certificados/IntroductionJS.jpeg",
+    titulo: "INTRODUCTION TO JAVASCRIPT · SoloLearn",
+    year: 2024,
+  },
 ];
 
 function Certificados() {
   const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const [selectedYear, setSelectedYear] = useState("Todos");
+  const [certificadoAmpliado, setCertificadoAmpliado] = useState<string | null>(
+    null
+  );
 
   const toggleShow = () => {
     setShow(!show);
@@ -76,7 +89,6 @@ function Certificados() {
 
   const handleYearChange = (e: any) => {
     setSelectedYear(e.target.value);
-    console.log(e.target.value);
   };
 
   const filteredCertificados = certificadosData.filter((certificado) => {
@@ -89,10 +101,11 @@ function Certificados() {
     <section id="certificados" className="certificados">
       <span className="glow"></span>
       <h1>{t("certificates")}</h1>
+
       <div className="carousel">
         <div>
           <select value={selectedYear} onChange={handleYearChange}>
-            <option value="Todos">{t("all")}</option>
+            <option value="Todos">{t("all")+` (${certificadosData.length})`}</option>
             <option value="2019">2019</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
@@ -110,23 +123,37 @@ function Certificados() {
                 img={certificado.img}
                 titulo={certificado.titulo}
                 year={certificado.year}
+                onClick={() => setCertificadoAmpliado(certificado.img)}
               />
             ))}
         </div>
         {filteredCertificados.length >= 6 && (
-          <button onClick={toggleShow}>{show ? t("seeLess") : t("seeMore")}</button>
+          <button onClick={toggleShow}>
+            {show ? t("seeLess") : t("seeMore")}
+          </button>
         )}
       </div>
+
+      {certificadoAmpliado && (
+        <div className="modal" onClick={() => setCertificadoAmpliado(null)}>
+          <img
+            src={certificadoAmpliado}
+            alt="Certificado ampliado"
+            className="modal-img"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }
 
-function Contenedor(props: any) {
+function Contenedor({ img, titulo, year, onClick }: any) {
   return (
-    <div className="containerI">
-      <img loading="lazy" src={props.img} alt="año de certificado" />
-      <h3> {props.titulo}</h3>
-      <p>{props.year}</p>
+    <div className="containerI" onClick={onClick}>
+      <img loading="lazy" src={img} alt="Certificado" />
+      <h3>{titulo}</h3>
+      <p>{year}</p>
     </div>
   );
 }
