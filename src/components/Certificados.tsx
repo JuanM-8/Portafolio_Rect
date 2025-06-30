@@ -73,6 +73,11 @@ const certificadosData = [
     titulo: "INTRODUCTION TO JAVASCRIPT · SoloLearn",
     year: 2024,
   },
+  {
+    img: "media/certificados/A1.jpg",
+    titulo: "NIVEL A1 INGLES · Smart",
+    year: 2025,
+  },
 ];
 
 function Certificados() {
