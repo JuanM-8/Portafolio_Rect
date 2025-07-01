@@ -19,7 +19,7 @@ const certificadosData = [
     year: 2022,
   },
   {
-    img: "media/certificados/CFreecodecamp.png",
+    img: "media/certificados/CFreecodecamp.avif",
     titulo: "RESPONSIVE WEB DESIGN · FreeCodeCamp",
     year: 2022,
   },
@@ -34,17 +34,17 @@ const certificadosData = [
     year: 2024,
   },
   {
-    img: "media/certificados/CBigDataT.png",
+    img: "media/certificados/CBigDataT.avif",
     titulo: "VISUALIZADOR DE BIG DATA · Capacitate Para El Empleo",
     year: 2024,
   },
   {
-    img: "media/certificados/CMTJS.webp",
+    img: "media/certificados/CMTJS.avif",
     titulo: "LENGUAGE DE PROGRAMACION JAVASCRIPT · Generacion TIC",
     year: 2024,
   },
   {
-    img: "media/certificados/CMTIA.webp",
+    img: "media/certificados/CMTIA.avif",
     titulo: "INTELIGENCIA ARTIFICIAL · Generacion TIC",
     year: 2024,
   },
@@ -54,12 +54,12 @@ const certificadosData = [
     year: 2024,
   },
   {
-    img: "media/certificados/CGenerativeAI.webp",
+    img: "media/certificados/CGenerativeAI.avif",
     titulo: "GENERATIVE AI: PROMPT ENGINEERING BASICS · Coursera",
     year: 2025,
   },
   {
-    img: "media/certificados/CLinkedin.jpg",
+    img: "media/certificados/CLinkedin.avif",
     titulo: "FUNDAMENTOS ESENCIALES DE LA PROGRAMACION · LinkedIn",
     year: 2025,
   },

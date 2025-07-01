@@ -10,20 +10,20 @@ function Project() {
       <div className="container_p">
         <Projects
           url="https://harrypotter-jm.netlify.app/"
-          img="media/Otros/PaginaHP.png"
+          img="media/Otros/PaginaHP.jpg"
           logo="media/Icons/html.png"
           logo1="media/Icons/css.png"
         />
         <Projects
           url="https://calculadorajdm.netlify.app/"
-          img="media/Otros/Calculadora.png"
+          img="media/Otros/Calculadora.jpg"
           logo="media/Icons/html.png"
           logo1="media/Icons/css.png"
           logo2="media/Icons/js.png"
         />
         <Projects
           url="https://todolistjdm.netlify.app/"
-          img="media/Otros/TodoList.png"
+          img="media/Otros/TodoList.jpg"
           logo="media/Icons/html.png"
           logo1="media/Icons/css.png"
           logo2="media/Icons/js.png"

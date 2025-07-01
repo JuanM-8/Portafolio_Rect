@@ -26,7 +26,7 @@ function About() {
       <div className="imagen">
         <img
           className="foto"
-          src="media/Otros/ImageP.jpg"
+          src="media/Otros/ImageP1.jpg"
           alt="imagen de perfil"
         />
         <div className="redes">
