@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const certificadosData = [
   {
-    img: "media/certificados/Asdo.avif",
+    img: "media/certificados/Adso.avif",
     titulo: "TECNÓLOGO EN ANALISIS Y DESARROLLO DE SOFTWARE ",
     year: 2025,
   },
