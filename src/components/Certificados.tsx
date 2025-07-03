@@ -4,30 +4,31 @@ import { useTranslation } from "react-i18next";
 
 const certificadosData = [
   {
-    img: "media/certificados/Cingles.webp",
-    titulo: "ENGLISH DOT WORKS 2 · SENA ",
-    year: 2019,
+    img: "media/certificados/Asdo.avif",
+    titulo: "TECNÓLOGO EN ANALISIS Y DESARROLLO DE SOFTWARE ",
+    year: 2025,
   },
   {
-    img: "media/certificados/Cc++.webp",
-    titulo: "ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ · SENA",
-    year: 2021,
+    img: "media/certificados/CGenerativeAI.avif",
+    titulo: "GENERATIVE AI: PROMPT ENGINEERING BASICS · Coursera",
+    year: 2025,
   },
   {
-    img: "media/certificados/Csistemas.webp",
-    titulo: "TÉCNICO EN SISTEMAS · SENA",
-    year: 2022,
+    img: "media/certificados/CLinkedin.avif",
+    titulo: "FUNDAMENTOS ESENCIALES DE LA PROGRAMACION · LinkedIn",
+    year: 2025,
   },
   {
-    img: "media/certificados/CFreecodecamp.avif",
-    titulo: "RESPONSIVE WEB DESIGN · FreeCodeCamp",
-    year: 2022,
+    img: "media/certificados/IntroductionHTML.jpeg",
+    titulo: "INTRODUCTION TO HTML · SoloLearn",
+    year: 2025,
   },
   {
-    img: "media/certificados/CIntroduccionAlaProgramacion.webp",
-    titulo: "INTRODUCCION A LA LÓGICA DE PROGRAMACIÓN · CUN",
-    year: 2023,
+    img: "media/certificados/A1.jpg",
+    titulo: "NIVEL A1 INGLES · Smart",
+    year: 2025,
   },
+
   {
     img: "media/certificados/Cfpi.webp",
     titulo: "CURSO INTRODUCTORIO A LA FORMACION INTEGRAL · SENA",
@@ -54,29 +55,34 @@ const certificadosData = [
     year: 2024,
   },
   {
-    img: "media/certificados/CGenerativeAI.avif",
-    titulo: "GENERATIVE AI: PROMPT ENGINEERING BASICS · Coursera",
-    year: 2025,
-  },
-  {
-    img: "media/certificados/CLinkedin.avif",
-    titulo: "FUNDAMENTOS ESENCIALES DE LA PROGRAMACION · LinkedIn",
-    year: 2025,
-  },
-  {
-    img: "media/certificados/IntroductionHTML.jpeg",
-    titulo: "INTRODUCTION TO HTML · SoloLearn",
-    year: 2025,
-  },
-  {
     img: "media/certificados/IntroductionJS.jpeg",
     titulo: "INTRODUCTION TO JAVASCRIPT · SoloLearn",
     year: 2024,
   },
   {
-    img: "media/certificados/A1.jpg",
-    titulo: "NIVEL A1 INGLES · Smart",
-    year: 2025,
+    img: "media/certificados/CIntroduccionAlaProgramacion.webp",
+    titulo: "INTRODUCCION A LA LÓGICA DE PROGRAMACIÓN · CUN",
+    year: 2023,
+  },
+  {
+    img: "media/certificados/Csistemas.webp",
+    titulo: "TÉCNICO EN SISTEMAS · SENA",
+    year: 2022,
+  },
+  {
+    img: "media/certificados/CFreecodecamp.avif",
+    titulo: "RESPONSIVE WEB DESIGN · FreeCodeCamp",
+    year: 2022,
+  },
+  {
+    img: "media/certificados/Cc++.webp",
+    titulo: "ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ · SENA",
+    year: 2021,
+  },
+  {
+    img: "media/certificados/Cingles.webp",
+    titulo: "ENGLISH DOT WORKS 2 · SENA ",
+    year: 2019,
   },
 ];
 
@@ -110,7 +116,9 @@ function Certificados() {
       <div className="carousel">
         <div>
           <select value={selectedYear} onChange={handleYearChange}>
-            <option value="Todos">{t("all")+` (${certificadosData.length})`}</option>
+            <option value="Todos">
+              {t("all") + ` (${certificadosData.length})`}
+            </option>
             <option value="2019">2019</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
