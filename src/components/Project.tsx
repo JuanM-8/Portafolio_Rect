@@ -23,7 +23,7 @@ function Project() {
         />
         <Projects
           url="https://todolistjdm.netlify.app/"
-          img="media/Otros/TodoList.jpg"
+          img="media/Otros/Todolist.jpg"
           logo="media/Icons/html.png"
           logo1="media/Icons/css.png"
           logo2="media/Icons/js.png"
@@ -36,6 +36,13 @@ function Project() {
         <Projects
           img="media/Otros/CrudDjango.png"
           logo="media/Icons/django-icon-1606x2048-lwmw1z73.png"
+        />
+        <Projects
+          url="https://verbsjdm.netlify.app/"
+          img="media/Otros/verbsWeb.avif"
+          logo="media/Icons/html.png"
+          logo1="media/Icons/css.png"
+          logo2="media/Icons/js.png"
         />
       </div>
     </section>
