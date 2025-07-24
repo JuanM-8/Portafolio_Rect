@@ -1,15 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+:root {
+  --background-color: #20222c;
+  --text-color: #ffffff;
+  --heading-color: #e2e3a4;
+  --border-color: gray;
+  --card-background: rgba(32, 34, 44, 0.7);
+  --hover-color: rgba(255, 255, 255, 0.2);
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-color: #16171a transparent;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inconsolata";
-  background: #20222c;
+  background: var(--background-color);
   background-image: url(/media/Otros/bk.png);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.5rem;
+  color: var(--heading-color);
 }

@@ -1,5 +1,4 @@
 {
-    
     "about": "Sobre mí",
     "projects": "Proyectos",
     "certificates": "Certificados",
@@ -7,6 +6,37 @@
     "all": "Todos",
     "seeMore": "Ver mas",
     "seeLess": "Ver menos",
-    "skills": "Habilidades"
-    
+    "skills": "Habilidades",
+    "contact": "Contáctame",
+    "contactInfo": "Estoy interesado en oportunidades freelance y colaboraciones. Si tienes un proyecto que quieres iniciar o crees que necesitas mi ayuda con algo, ¡no dudes en contactarme!",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro",
+    "project1": {
+      "title": "Sitio web de Harry Potter",
+      "description": "Un sitio web sobre el universo de Harry Potter con información sobre personajes, casas y más."
+    },
+    "project2": {
+      "title": "Calculadora",
+      "description": "Una aplicación de calculadora simple con operaciones aritméticas básicas."
+    },
+    "project3": {
+      "title": "Lista de Tareas",
+      "description": "Una aplicación de gestión de tareas para llevar un registro de tus actividades diarias."
+    },
+    "project4": {
+      "title": "Juego JumpMer",
+      "description": "Un juego de plataformas 2D desarrollado con Unity."
+    },
+    "project5": {
+      "title": "CRUD con Django",
+      "description": "Una aplicación CRUD construida con el framework Django."
+    },
+    "project6": {
+      "title": "Web de Verbos",
+      "description": "Un sitio web para aprender y practicar verbos en inglés."
+    }
   }

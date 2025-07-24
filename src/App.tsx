@@ -1,28 +1,35 @@
-import Header from "./components/Header"
-import Project from "./components/Project";
-import Separador from "./components/Separador";
-import About from "./components/About";
-import Certificados from "./components/Certificados";
-import Skills from "./components/Skills"
-import Footer from "./components/Footer";
+import { lazy, Suspense } from "react";
+import Header from "./components/Header";
 import Button from "./components/buttonTranslate";
+import DarkModeToggle from "./components/DarkModeToggle";
+import Meta from "./components/Meta";
+
+// Lazy load components
+const About = lazy(() => import("./components/About"));
+const Separador = lazy(() => import("./components/Separador"));
+const Project = lazy(() => import("./components/Project"));
+const Certificados = lazy(() => import("./components/Certificados"));
+const Skills = lazy(() => import("./components/Skills"));
+const Footer = lazy(() => import("./components/Footer"));
 
 import "../src/Styles/App.css";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Button></Button>
+      <Meta />
+      <Header />
+      <DarkModeToggle />
+      <Button />
 
-      <About></About>
-      <Separador></Separador>
-      <Project></Project>
-      <Certificados></Certificados>
-      <Skills></Skills>
-      <Footer></Footer>
-
-      
+      <Suspense fallback={<div className="loading">Loading...</div>}>
+        <About />
+        <Separador />
+        <Project />
+        <Certificados />
+        <Skills />
+        <Footer />
+      </Suspense>
     </>
   );
 }

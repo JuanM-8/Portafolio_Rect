@@ -6,5 +6,37 @@
   "all": "All",
   "seeMore": "See more",
   "seeLess": "See less",
-  "skills": "Skills"
+  "skills": "Skills",
+  "contact": "Contact Me",
+  "contactInfo": "I'm interested in freelance opportunities and collaborations. If you have a project that you want to get started or think you need my help with something, feel free to reach out!",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send Message",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode",
+  "project1": {
+    "title": "Harry Potter Website",
+    "description": "A website about the Harry Potter universe with information about characters, houses, and more."
+  },
+  "project2": {
+    "title": "Calculator",
+    "description": "A simple calculator application with basic arithmetic operations."
+  },
+  "project3": {
+    "title": "Todo List",
+    "description": "A task management application to keep track of your daily activities."
+  },
+  "project4": {
+    "title": "JumpMer Game",
+    "description": "A 2D platformer game developed with Unity."
+  },
+  "project5": {
+    "title": "Django CRUD",
+    "description": "A CRUD application built with Django framework."
+  },
+  "project6": {
+    "title": "Verbs Web",
+    "description": "A website to learn and practice English verbs."
+  }
 }

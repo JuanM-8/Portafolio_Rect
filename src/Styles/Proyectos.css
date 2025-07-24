@@ -21,21 +21,49 @@
   margin-top: 3rem;
 }
 .proyectos .proyecto_cards {
-  border: solid 2px gray;
+  border: solid 2px var(--border-color);
   border-radius: 20px;
-  padding: 15px 15px 0 15px ;
+  padding: 15px;
   width: 100%;
-  height: max-content;
+  height: 100%;
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: start;
-  
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.lg{
-  padding: 20px;
+.proyectos .proyecto_cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lg {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-info {
+  padding: 15px 0;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--heading-color);
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.4;
 }
 
 
