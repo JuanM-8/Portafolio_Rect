@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Button from "./components/buttonTranslate";
-import DarkModeToggle from "./components/DarkModeToggle";
 import Meta from "./components/Meta";
 
 // Lazy load components
@@ -19,7 +18,7 @@ function App() {
     <>
       <Meta />
       <Header />
-      <DarkModeToggle />
+      
       <Button />
 
       <Suspense fallback={<div className="loading">Loading...</div>}>

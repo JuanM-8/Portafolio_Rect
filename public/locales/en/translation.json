@@ -13,8 +13,6 @@
   "email": "Email",
   "message": "Message",
   "send": "Send Message",
-  "darkMode": "Dark Mode",
-  "lightMode": "Light Mode",
   "project1": {
     "title": "Harry Potter Website",
     "description": "A website about the Harry Potter universe with information about characters, houses, and more."
