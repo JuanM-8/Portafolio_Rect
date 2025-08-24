@@ -21,7 +21,7 @@
   margin-top: 3rem;
 }
 .proyectos .proyecto_cards {
-  border: solid 2px var(--border-color);
+  border: solid 2px gray;
   border-radius: 20px;
   padding: 15px;
   width: 100%;
@@ -57,12 +57,12 @@
 .project-info h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: var(--heading-color);
+  color: #e2e3a4;
 }
 
 .project-info p {
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: white;
   line-height: 1.4;
 }
 
