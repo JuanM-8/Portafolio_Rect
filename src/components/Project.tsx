@@ -12,55 +12,75 @@ interface ProjectData {
 
 function Project() {
   const { t } = useTranslation();
-  
+
   const projects: ProjectData[] = [
     {
       url: "https://harrypotter-jm.netlify.app/",
-      img: "media/Otros/PaginaHP.jpg",
+      img: "media/otros/PaginaHP.jpg",
       logos: ["media/Icons/html.png", "media/Icons/css.png"],
       title: t("project1.title"),
       description: t("project1.description"),
-      github: "https://github.com/JuanM-8/HarryPotter-Web"
+      github: "https://github.com/JuanM-8/HarryPotter-Web",
     },
     {
       url: "https://calculadorajdm.netlify.app/",
-      img: "media/Otros/Calculadora.jpg",
-      logos: ["media/Icons/html.png", "media/Icons/css.png", "media/Icons/js.png"],
+      img: "media/otros/Calculadora.jpg",
+      logos: [
+        "media/Icons/html.png",
+        "media/Icons/css.png",
+        "media/Icons/js.png",
+      ],
       title: t("project2.title"),
       description: t("project2.description"),
-      github: "https://github.com/JuanM-8/Calculator"
+      github: "https://github.com/JuanM-8/Calculator",
     },
     {
       url: "https://todolistjdm.netlify.app/",
-      img: "media/Otros/Todolist.jpg",
-      logos: ["media/Icons/html.png", "media/Icons/css.png", "media/Icons/js.png"],
+      img: "media/otros/Todolist.jpg",
+      logos: [
+        "media/Icons/html.png",
+        "media/Icons/css.png",
+        "media/Icons/js.png",
+      ],
       title: t("project3.title"),
       description: t("project3.description"),
-      github: "https://github.com/JuanM-8/TodoList"
+      github: "https://github.com/JuanM-8/TodoList",
     },
     {
       url: "https://juan08.itch.io/jumpmer",
-      img: "media/Otros/JumpMer.png",
+      img: "media/otros/JumpMer.png",
       logos: ["media/Icons/Unity-logo.png"],
       title: t("project4.title"),
       description: t("project4.description"),
-      github: "https://github.com/JuanM-8/JumpMer"
+      github: "https://github.com/JuanM-8/JumpMer",
     },
     {
-      img: "media/Otros/CrudDjango.png",
+      img: "media/otros/CrudDjango.png",
       logos: ["media/Icons/django-icon-1606x2048-lwmw1z73.png"],
       title: t("project5.title"),
       description: t("project5.description"),
-      github: "https://github.com/JuanM-8/DjangoCRUD"
+      github: "https://github.com/JuanM-8/DjangoCRUD",
     },
     {
       url: "https://verbsjdm.netlify.app/",
-      img: "media/Otros/verbsWeb.avif",
-      logos: ["media/Icons/html.png", "media/Icons/css.png", "media/Icons/js.png"],
+      img: "media/otros/verbsWeb.avif",
+      logos: [
+        "media/Icons/html.png",
+        "media/Icons/css.png",
+        "media/Icons/js.png",
+      ],
       title: t("project6.title"),
       description: t("project6.description"),
-      github: "https://github.com/JuanM-8/VerbsWeb"
-    }
+      github: "https://github.com/JuanM-8/VerbsWeb",
+    },
+    {
+      url: "https://knowledgeti.netlify.app/",
+      img: "media/otros/knowledge.avif",
+      logos: ["media/Icons/react.avif"],
+      title: t("project7.title"),
+      description: t("project7.description"),
+      github: "https://github.com/JuanM-8/knowledgeti",
+    },
   ];
 
   return (
@@ -80,7 +100,11 @@ function ProjectCard({ project }: { project: ProjectData }) {
   return (
     <div className="proyecto_cards">
       <span className="git">
-        <a href={project.github || "https://github.com/JuanM-8"} target="_blank" rel="noopener noreferrer">
+        <a
+          href={project.github || "https://github.com/JuanM-8"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 496"
@@ -95,7 +119,12 @@ function ProjectCard({ project }: { project: ProjectData }) {
         </a>
       </span>
       {project.url ? (
-        <a href={project.url} id="apcards" target="_blank" rel="noopener noreferrer">
+        <a
+          href={project.url}
+          id="apcards"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={project.img} alt={project.title} />
         </a>
       ) : (
