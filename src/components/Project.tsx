@@ -35,16 +35,13 @@ function Project() {
       github: "https://github.com/JuanM-8/Calculator",
     },
     {
-      url: "https://todolistjdm.netlify.app/",
-      img: "media/otros/Todolist.jpg",
-      logos: [
-        "media/Icons/html.png",
-        "media/Icons/css.png",
-        "media/Icons/js.png",
-      ],
+      url: "https://todorjdm.netlify.app/",
+      img: "media/otros/Todorjdm.avif",
+      logos: ["media/Icons/react.avif"],
+
       title: t("project3.title"),
       description: t("project3.description"),
-      github: "https://github.com/JuanM-8/TodoList",
+      github: "https://github.com/JuanM-8/TodoReact",
     },
     {
       url: "https://juan08.itch.io/jumpmer",

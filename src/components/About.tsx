@@ -14,7 +14,7 @@ function About() {
           <h2>
             <Typewriter
               options={{
-                strings: ["Software developer"],
+                strings: [t("titleheader")],
                 autoStart: true,
                 loop: true,
               }}
