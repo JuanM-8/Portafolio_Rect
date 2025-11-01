@@ -1,25 +1,30 @@
 import "../Styles/About.css";
-import Typewriter from "typewriter-effect";
 import { useTranslation } from "react-i18next";
-
+import { useEffect } from "react";
+import { gsap } from "gsap/gsap-core";
 function About() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    gsap.fromTo(
+      ".descripcion",
+      { opacity: 0, scale: 1, x: 150 },
+
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.2,
+        ease: "bounce.out",
+      }
+    );
+  }, []);
   return (
     <section className="about" id="about">
       <span className="glow" />
       <div className="descripcion">
         <div>
           <h1>JUAN DAVID MARIN ARISMENDEZ</h1>
-          <h2>
-            <Typewriter
-              options={{
-                strings: [t("titleheader")],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h2>
+          <h2>{t("titleheader")}</h2>
         </div>
         <p>{t("aboutP")}</p>
       </div>

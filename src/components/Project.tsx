@@ -1,5 +1,9 @@
 import "../Styles/Proyectos.css";
+import { useEffect } from "react";
+import { gsap } from "gsap";
 import { useTranslation } from "react-i18next";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface ProjectData {
   url?: string;
@@ -11,6 +15,30 @@ interface ProjectData {
 }
 
 function Project() {
+  useEffect(() => {
+    gsap.utils.toArray(".proyecto_cards").forEach((card) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, scale: 0.8, y: 20 },
+
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: .5,
+          ease: "elastic",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 98%", // cuando entra al viewport
+            toggleActions: "play none none reverse",
+            
+          },
+        }
+      );
+    });
+    
+  }, []);
+
   const { t } = useTranslation();
 
   const projects: ProjectData[] = [

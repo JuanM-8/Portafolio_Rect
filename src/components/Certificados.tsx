@@ -1,5 +1,9 @@
 import "../Styles/Certificados.css";
-import { useState } from "react";
+import { useState, useEffect} from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import { useTranslation } from "react-i18next";
 
 const certificadosData = [
@@ -93,6 +97,28 @@ function Certificados() {
   const [certificadoAmpliado, setCertificadoAmpliado] = useState<string | null>(
     null
   );
+
+  useEffect(() => {
+    gsap.utils.toArray(".containerI").forEach((item) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, scale: 0.8, y: 20 },
+
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: .5,
+          ease: "",
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%", // cuando entra al viewport
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, [show]);
 
   const toggleShow = () => {
     setShow(!show);
