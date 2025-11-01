@@ -99,7 +99,8 @@ function Certificados() {
   );
 
   useEffect(() => {
-    gsap.utils.toArray(".containerI").forEach((item) => {
+    const items = gsap.utils.toArray<HTMLElement>(".containerI");
+    items.forEach((item) => {
       gsap.fromTo(
         item,
         { opacity: 0, scale: 0.8, y: 20 },
